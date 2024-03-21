@@ -1,0 +1,264 @@
+@font-face{
+    font-family: Trueno;
+    src: url(TruenoRg.woff);
+}
+
+body{
+    font-family: Trueno;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+html{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+a:hover{
+    color: #67BAAF;
+}
+
+div p a:link{
+ color: #007C89;
+}
+
+div p a:visited{
+    color: #67BAAF
+}
+
+div p a:active{
+    color: #F2E383
+}
+
+.section{
+    width: 100%;
+    display: flex;
+}
+
+#buttonSection{
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+}
+@media all and (max-width:600px){
+    #section3{
+        /*Settings to make the section scrollable: came from https://www.w3docs.com/snippets/css/how-to-make-a-div-vertically-scrollable.html */
+        height:34vh;
+        overflow-x:hidden;
+        overflow-y:auto;
+        margin-bottom:7vh;
+    }
+    #buttonSection{
+        height: fit-content;
+        width: fit-content;
+    }
+    .navBar{
+        height:10vh;
+    }
+    #tempImage{
+        height:45vh;
+    }
+    #small{
+        max-height: 10vh;
+        max-width:95%;
+    }
+    #banner{
+        display:none;
+    }
+}
+@media all and (min-width:600px){
+    #tempImage{
+        width:100%;
+        height:auto;
+    }
+    #section3{
+        align-content:center;/*This causes problems on phone screens, so it has to only apply to bigger screens */
+    }
+    #buttonSection{
+        width:100%;
+    }
+    #section3{
+        height: auto;
+        margin-bottom: 7vh; /* Need this to be at least 6vh to keep the text above the footer*/
+    }
+    #small{
+        display:none;
+    }
+}
+
+#section3{
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 50em; 
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#logoImg{
+    height: 10vh;
+    min-width: 0.75in;
+    min-height: 0.75in;
+}
+
+.navBar{
+    overflow: hidden;
+    background-color: #007C89;
+    min-height: 0.75in;
+    height:10vh;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#footer{
+    background-color: #007C89;
+    min-height: 6vh;
+    width: 100%;
+    /* Figured out how to do the fixed position at https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index: 101;
+ }
+.hidden{
+    display: none;
+}
+
+.shown{
+    display: block;
+}
+
+.Button{
+    z-index: 100;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    margin:0;
+    padding:0;
+    border:0;
+}
+.pin{
+    height:4vh;
+}
+#tempImage{
+    z-index: -1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.element{
+    max-width: 40em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#scroll{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/******************** Button Settings ***********************************/
+
+/* Trash Goat button */
+#Button1{
+    left: 6.5%;
+    top: 63%;
+}
+
+/* Pavilion button */
+#Button2{
+    left: 8.8%;
+    top: 23%;
+}
+
+/* North Clocktower button */
+#Button3{
+    left: 16.2%;
+    top: 25%;
+}
+
+/* Bloomsday button */
+#Button4{
+    left: 24%;
+    top: 63%;
+}
+
+/* City Blocks button */
+#Button5{
+    left: 15%;
+    top: 66%;
+}
+
+/* Hiking Trails button */
+#Button6{
+    left: 50%;
+    top: 87%;
+}
+
+/* Spokane button */
+#Button7{
+    left: 34%;
+    top: 68%;
+}
+
+/* Lilacs button */
+#Button8{
+    left: 13%;
+    top: 86%;
+}
+
+/* Title 1 Schools button */
+#Button9{
+    left: 60%;
+    top: 57%;
+}
+
+/* Manito Park button */
+#Button10{
+    left: 85%;
+    top: 79%;
+}
+
+/* Doyle's Icecream button */
+#Button11{
+    left: 40%;
+    top: 52%;
+}
+
+/* Garland Theater button */
+#Button12{
+    left: 53.5%;
+    top: 22%;
+}
+
+/* Green Bluff button */
+#Button13{
+    left: 73%;
+    top: 33%;
+}
+
+/* St. John's Cathedral button */
+#Button14{
+    left: 86%;
+    top: 14%;
+}
+
+/* Whitworth Volunteer button */
+#Button15{
+    left: 42%;
+    top: 73%;
+}
+
+
